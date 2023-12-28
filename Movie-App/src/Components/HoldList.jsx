@@ -1,3 +1,4 @@
+import { enqueueSnackbar } from "notistack";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -42,7 +43,7 @@ function HoldList() {
         <ul>
           {movieDetails.map((movie) => {
             const handleWatch = () => {
-              toast("Added to Watched");
+              enqueueSnackbar("added to watching");
               sessionStorage.setItem(movie.id, "WATCHING");
             };
             return (

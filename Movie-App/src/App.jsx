@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar";
 import Status from "./Components/Status";
 import Title from "./Components/Title";
 import Watching from "./Components/Watching";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/watch" element={<Watching />} />
         <Route path="/status" element={<Status />} />
       </Routes>
+      <Footer />
     </>
   );
 }

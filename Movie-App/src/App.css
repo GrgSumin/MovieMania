@@ -1,49 +1,52 @@
-body{
-  background-color: rgb(148, 135, 135);
+body {
+  /* Light blue background */
   position: relative;
-  font-size:20px;
-
-  
-  
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-.MovieL{
-  
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+.MovieL {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   border-radius: 20px;
-  height: 300px;
+  height: 3r50px;
   width: 90%;
   margin: 30px;
   padding: 10px;
-  overflow:auto;
-}
-.img1{
   
-  transition: .3s;
+}
 
-}
-.img1:hover{
-  transform: scale(1.3);
-}
-.img1{
+.img1 {
+  transition: 0.3s;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   height: 120px;
   width: 120px;
   margin-left: 40%;
-
 }
-.list{
+
+.img1:hover {
+  transform: scale(1.3);
+}
+
+.list {
   display: flex;
   margin-top: 20px;
-  
-  
-  
 }
-.btn{
-  
+
+.btn {
   margin-right: 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
 }
-.wwe{
+
+.wwe {
   font-size: 100px;
   display: flex;
   justify-content: center;
@@ -51,80 +54,130 @@ body{
   background-size: cover;
   background-clip: text;
   color: transparent;
+  margin-bottom: 20px;
 }
-.box{
-  background-color: skyblue;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  width: 80%;
-  padding: 30px;
-  margin-left: 60px;
-  
+
+
+.navbar {
+  background-color: #333; /* Dark background color */
+  padding: 15px;
 }
-.navbar{
-  background-color: skyblue;
-  margin-top: 15px;
-  border: solid aliceblue;
+
+.navbar img {
+  width: 40px; /* Adjust the image size as needed */
+  height: auto;
+  margin-right: 10px;
 }
-.Lists{
+
+.navbar a {
+  color: white; /* Text color for navbar links */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+/* Rest of your CSS styles... */
+
+
+.Lists {
   color: black;
   text-decoration: none;
 }
-.form{
+
+.form {
   border-radius: 10px;
   height: 50px;
   width: 400px;
-  margin-left: 100px;
+  margin: 0 auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
 }
-.container{
+
+.container {
   height: 50px;
 }
-.wat ul{
+.detailed{
+  width: 250px;
+  height: 300px;
+}
+
+.wat ul {
   display: flex;
   gap: 10px;
   list-style-type: none;
   overflow: auto;
 }
-.wat li{
-  width: 90%;
+
+.wat li {
+  width: 300px;
 }
-.movieLists{
+
+.movieLists {
   border: solid;
   margin-bottom: 10%;
 }
-.wat{
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 20px;
-  background-color: skyblue;
+
+.wat {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  height: 450px;
+  width: 90%;
+  margin: 30px;
+  padding: 10px;
 }
-.contain{
+
+.contain {
   padding: 10px;
   margin: 10px;
 }
 
- @media (min-width:990px){
-  .MovieL{
-    display: flex;
+.tablet{
+  margin: 40px;
+}
+.search{
+  margin: 40px;
+}
+.footer{
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+}
+.social{
+  display: flex;
+  gap: 10px;
+  
+}
+
+@media (min-width: 990px) {
+  .MovieL {
+    height: 450px;
     padding: 40px;
     gap: 100px;
-   
   }
-  .img1{
-    height: 220px;
-    width: 220px;
+  .img1 {
+    height: 100px;
+    width: 100px;
     margin: 0;
-  
   }
-   .box{
+  .box {
+    display: flex;
     width: 70%;
     padding: 30px;
-    margin-left: 15%;
-    
+    margin: 30px auto;
+    overflow: scroll;
   }
-  .form{
+  .form {
     margin-left: 400px;
     width: 500px;
   }
+  .tablet{
+    display: flex;
   
- }
+  }
+}
+

@@ -1,3 +1,4 @@
+import { enqueueSnackbar } from "notistack";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -42,7 +43,7 @@ function Watching() {
         <ul>
           {movieDetails.map((movie) => {
             const handleComplete = () => {
-              toast("Movie completed");
+              enqueueSnackbar("added to completed");
               sessionStorage.setItem(movie.id, "COMPLETED");
               // navigate(`Status/${movie.id}`);
             };
@@ -61,6 +62,8 @@ function Watching() {
                   <h5 style={{ fontWeight: "bold" }}>Title: {movie.title}</h5>
                   <h5>Release Date: {movie.release_date}</h5>
                   <h5>Language: {movie.original_language}</h5>
+                </div>
+                <div className="button">
                   <button
                     type="button"
                     class="btn btn-success"

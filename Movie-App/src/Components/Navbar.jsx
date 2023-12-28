@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BiSolidCameraMovie } from "react-icons/bi";
 
 function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg ">
-        <div className="containers">
+        <div className="containers" style={{ display: "flex" }}>
           <ul
             style={{
               listStyleType: "none",
@@ -15,11 +14,6 @@ function Navbar() {
               padding: "20px",
             }}
           >
-            <BiSolidCameraMovie
-              style={{
-                fontSize: "100px",
-              }}
-            />
             <li>
               <Link to="/movie" className="Lists movie">
                 <h1 style={{ fontSize: "50px, " }}>MovieMania</h1>
@@ -34,6 +28,21 @@ function Navbar() {
           </ul>
         </div>
       </nav>
+      <div className="">
+        <h1 className="wwe">MovieMania</h1>
+      </div>
+      <div className="tablet">
+        <div className="std">
+          <h1 style={{ fontFamily: "'Quicksand',sans-serif" }}>Movies</h1>
+          <p style={{ fontFamily: "'Quicksand',sans-serif" }}>
+            Movies transport us to different worlds, invoking emotions and
+            sparking imagination through captivating storytelling and visuals.
+          </p>
+        </div>
+        <div className="tab">
+          <img src="pop.jpg" alt="popcorn" height="300px" />
+        </div>
+      </div>
     </div>
   );
 }
